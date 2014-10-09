@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Firebase App - @ianaya89</title>
+
+  <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'>
+  <link rel='stylesheet' type='text/css' href='css/app.css'>
+
+  <script src='js/firebase.js'></script>
+</head>
+<body>
+
+  <div class="main container">
+
+      <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand">Comment Tool</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+     <div class="col-lg-4">
+       <!-- FORM -->
+       <div class="row">
+        <div class="well bs-component">
+          <form class="form-horizontal">
+            <fieldset>
+              <legend>Leave a Comment</legend>
+              <div class="form-group">
+                <div class="col-lg-11">
+                  <input type="text" class="form-control" id="nameInput" placeholder="Your name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-11">
+                  <textarea class="form-control" id="messageInput" placeholder="Your message"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-11">
+                  <select id="subjectInput" class="form-control" placeholder="Subject">
+                    <option value="-1" disabled selected>Select a subject</option>
+                    <option value="success">Well done!</option>
+                    <option value="danger">Ups!</option>
+                    <option value="warning">Warning</option>
+                    <option value="info">Info</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button class="btn btn-default">Cancel</button>
+                  <button id="btnSubmit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <!-- MESSAGES -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div id='messagesDiv'></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
